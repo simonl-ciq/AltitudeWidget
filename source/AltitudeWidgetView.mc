@@ -32,7 +32,7 @@ class AltitudeWidgetView extends Ui.View {
     		alt = Math.round(alt * mConvert);
         	alt = (alt.toNumber()).toString();
 			View.findDrawableById("value").setText(alt);
-			Sys.println(View.findDrawableById("value").locY);
+//			Sys.println(View.findDrawableById("value").locY);
         } else {
 			View.findDrawableById("title").setText("No Altitude");
 			View.findDrawableById("value").setText("0000");
