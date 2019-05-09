@@ -2,6 +2,12 @@
     <iq:application entry="AltitudeWidgetApp" id="4d807567d8c1404aa2d76d1d5bc5404a" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="1.3.0" name="@Strings.AppName" type="widget" version="1.0.0.a">
         <iq:products>
             <iq:product id="approachs60"/>
+            <iq:product id="d2bravo"/>
+            <iq:product id="d2bravo_titanium"/>
+            <iq:product id="d2charlie"/>
+            <iq:product id="d2delta"/>
+            <iq:product id="d2deltapx"/>
+            <iq:product id="d2deltas"/>
             <iq:product id="descentmk1"/>
             <iq:product id="edge1030"/>
             <iq:product id="edge1030bontrager"/>
@@ -33,6 +39,11 @@
             <iq:product id="fr935"/>
             <iq:product id="fr945"/>
             <iq:product id="gpsmap66"/>
+            <iq:product id="marqathlete"/>
+            <iq:product id="marqaviator"/>
+            <iq:product id="marqcaptain"/>
+            <iq:product id="marqdriver"/>
+            <iq:product id="marqexpedition"/>
             <iq:product id="oregon7xx"/>
             <iq:product id="rino7xx"/>
             <iq:product id="vivoactive"/>
