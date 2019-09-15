@@ -21,4 +21,9 @@ class AltitudeWidgetApp extends App.AppBase {
         return [ AltView, new AltitudeWidgetDelegate() ];
     }
 
+(:glance)
+    function getGlanceView() {
+        return [ new AltitudeWidgetGlanceView() ];
+    }
+
 }
