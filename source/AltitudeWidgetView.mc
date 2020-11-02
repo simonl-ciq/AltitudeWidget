@@ -29,9 +29,7 @@ class AltitudeWidgetView extends Ui.View {
 
     	if (sensorInfo.altitude != null) {
    			var alt = sensorInfo.altitude;
-   			alt = Math.round(alt * mConvert);
-       		alt = (alt.toNumber()).toString();
-			View.findDrawableById("value").setText(alt);
+			View.findDrawableById("value").setText((alt * mConvert).format("%.0f"));
    	    } else {
 			View.findDrawableById("title").setText(mTitle + "\nnot available");
 			View.findDrawableById("value").setText("0000");
@@ -72,10 +70,8 @@ class AltitudeWidgetGlanceView extends Ui.GlanceView {
 		dc.drawText(0, -7, Gfx.FONT_SMALL, "Simply Altitude", Gfx.TEXT_JUSTIFY_LEFT);
 		dc.setColor(Gfx.COLOR_DK_GREEN,Gfx.COLOR_TRANSPARENT);
     	if (sensorInfo.altitude != null) {
-   			var elev = sensorInfo.altitude;
-   			elev = Math.round(elev * mConvert);
-       		var alt = (elev.toNumber()).toString();
-			dc.drawText(centre, vcentre, Gfx.FONT_MEDIUM, alt + (mNotMetric ? "ft" : "m"), Gfx.TEXT_JUSTIFY_CENTER);
+   			var alt = sensorInfo.altitude;
+			dc.drawText(centre, vcentre, Gfx.FONT_MEDIUM, (alt * mConvert).format("%.0f") + (mNotMetric ? "ft" : "m"), Gfx.TEXT_JUSTIFY_CENTER);
         } else {
 			dc.drawText(centre, vcentre, Gfx.FONT_SMALL, "not available", Gfx.TEXT_JUSTIFY_CENTER);
 		}
